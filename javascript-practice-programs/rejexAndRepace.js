@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body style="font-family: monospace;font-size: xx-large;">
 
 <h2>JavaScript Regular Expressions</h2>
 
