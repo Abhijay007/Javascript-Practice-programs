@@ -50,3 +50,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 [MIT](https://choosealicense.com/licenses/mit/)
 
 #### Created by [@Abhijay007](https://github.com/Abhijay007) Designed by [@Cheemashyper](https://github.com/Cheemashyper) - Feel Free to Contact us!
+
+### And forget to give this repository a ⭐
