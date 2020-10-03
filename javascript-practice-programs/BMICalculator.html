@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+  <h1>BMI Calculator</h1>
+  <p>Body mass index (BMI) is a measure of body fat based on weight and height.</p>
+
+  <!-- Input for weight and height -->
+  <label for="weight">Weight (kg):</label>
+  <input type="text" id="weight">
+  <br><br>
+
+  <label for="height">Height (m):</label>
+  <input type="text" id="height">
+  <br><br>
+
+  <!-- Calculate BMI-->
+  <!-- On click calls function to calculate BMI -->
+  <input type="button" value="Calculate BMI" onclick="calculateBMI();">
+  <br><br>
+
+  <!-- Result -->
+  <label for="result">Your BMI:</label>
+  <input type="text" id="result">
+  <br><br>
+
+  <!-- Add JS -->
+
+  <script>
+    function calculateBMI() {
+
+      //The parseFloat() function parses a string and returns a floating point number.
+      //Input for Weight and Height is type="text",so in order to calculate with them we must convert them to number (float)
+      var weight = parseFloat(document.getElementById("weight").value);
+      var height = parseFloat(document.getElementById("height").value);
+
+      var result = weight / (height * height);
+
+      document.getElementById("result").value = result;
+    }
+  </script>
+
+
+</body>
+
+</html>
