@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Randomiser</title>
+  <style>
+    td,
+    button {
+      border: 2px solid black;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      font-size: 1.875rem;
+      text-align: center;
+      min-width: 2rem;
+      padding: 0.5rem;
+    }
+
+    button {
+      margin: 1rem 0px 0px 2px
+    }
+
+    button:hover {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0px;
+    }
+
+    body {
+      padding: 1rem;
+    }
+  </style>
+</head>
+
+<body style="font-family: monospace;">
+  <h1>Cell Array Randomiser</h1>
+  <table>
+    <tr id="array">
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+  </table>
+  <button onclick="randomise()">
+    Randomise
+  </button>
+  <script>
+    const arrayTable = document.getElementById('array');
+    const randomise = () => {
+      const arrayItems = Array.from(arrayTable.cells); // Creates a workable array of the array items
+      const randomNumber = (min = 0, max = arrayItems.length) => {
+        return Math.floor((Math.random() + min) * max);
+      }
+
+      // Creates an array of all of the cell index numbers
+      const availableCells = arrayItems.map((item) => {
+        return {
+          taken: false,
+          content: item.innerText
+        }
+      });
+      // Create a new array which will have the random cell order once it has been generated
+      const newCellOrder = [];
+      // Iterate over each cell in the table row
+      arrayItems.forEach((item) => {
+        // Generate an index number to select from the available cells
+        let index = randomNumber();
+        // If we select a new cell that is already taken, keep randomly selecting an index until we find a free one
+        while (availableCells[index].taken === true) {
+          index = randomNumber(); // Generate a new index
+        }
+        availableCells[index].taken = true; // Set the new cell as taken
+        newCellOrder.push(availableCells[index]); // Add the new cell in the random spot
+        item.remove(); // Remove the cell, we'll add it again in the new randomised order
+      });
+      // Go over the new cells, in the order the we randomised
+      newCellOrder.forEach((cell) => {
+        // Insert the new cell
+        arrayTable.insertAdjacentHTML('beforeend', `<td>${cell.content}</td>`)
+      });
+    }
+  </script>
+</body>
+
+</html>
