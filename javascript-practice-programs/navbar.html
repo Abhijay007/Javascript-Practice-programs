@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #1a202c;
+    }
+
+    /*********************** NAVBAR *****************************/
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh;
+      background-color: #2d3748;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+    }
+
+    nav .logo {
+      color: #8592a4;
+      letter-spacing: 2px;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    nav .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 40%;
+    }
+
+    .nav-links li {
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #8592a4;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px;
+      text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-links a:hover {
+      color: white;
+
+      transform: scale(1.2);
+    }
+
+    .burger {
+      display: none;
+      cursor: pointer;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: #8592a4;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+
+    @media screen and (max-width: 1024px) {
+      nav .nav-links {
+        width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        overflow-x: hidden !important;
+      }
+
+      .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #2d3748;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70% !important;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+      }
+      .nav-links a {
+        font-size: 20px;
+        padding: 10px 30px;
+        text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+      }
+
+      .nav-links li {
+        position: relative;
+        opacity: 1;
+        transform: translateX(100vw);
+      }
+
+      .nav-links li.nav-active {
+        transform: translateX(0);
+      }
+
+      .burger {
+        display: block;
+      }
+    }
+
+    .nav-active {
+      transform: translateX(0%);
+    }
+
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+      opacity: 0;
+    }
+
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  </style>
+
+  <body>
+    <!----------------------- NAVBAR -------------------------------->
+    <nav>
+      <div class="logo" href="#home">Devraj Chatribin</div>
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </body>
+
+  <script>
+    //Nav Bar Functioning
+    const navSlide = () => {
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+      const navLinks = document.querySelectorAll(".nav-links li");
+
+      burger.addEventListener("click", () => {
+        // toggle nav
+        nav.classList.toggle("nav-active");
+
+        // Animate Links
+        navLinks.forEach((link, index) => {
+          if (link.className == "nav-active") {
+            link.style.transition = "1s ease-in";
+          } else {
+            link.style.transition = "0.5s ease " + index / 7 + "s";
+          }
+          link.classList.toggle("nav-active");
+          link.addEventListener("click", () => {
+            nav.classList.remove("nav-active");
+            burger.classList.remove("toggle");
+            navLinks.forEach((link) => {
+              link.style.transition = "1s ease-in";
+              link.classList.remove("nav-active");
+            });
+          });
+        });
+        // Burger animation
+        burger.classList.toggle("toggle");
+      });
+    };
+    navSlide();
+  </script>
+</html>
