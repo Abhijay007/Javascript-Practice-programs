@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <style>
+      body {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      p {
+        margin: 0px;
+      }
+
+      button {
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-align: center;
+        min-width: 2rem;
+        padding: 0.5rem;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        text-decoration: underline;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 0px;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      main > div {
+        margin: 0px 0px 0.5rem 0px;
+      }
+
+      input {
+        width: 4rem;
+        font-size: 1rem;
+      }
+
+      #lower {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #result {
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+      }
+    </style>
+</head>
+
+<body style="font-family: monospace;">
+    <h1>Random Number Generator</h1>
+    <main>
+      <div>
+        <label for="Min">Minimum</label>
+        <input type="number" name="Min" id="min" autocomplete="false">
+      </div>
+      <div>
+        <label for="Max">Maximum</label>
+        <input type="number" name="Max" id="max" autocomplete="false">
+      </div>
+    </main>
+    <div id="lower">
+      <button onclick="randomNumber()">
+        Generate
+      </button>
+      <p>
+        <b id="result"></b>
+      </p>
+    </div>
+    <script>
+      const randomNumber = () => {
+        const min = parseInt(document.getElementById('min').value);
+        const max = parseInt(document.getElementById('max').value);
+        const output = document.getElementById('result');
+
+        // If the input is somehow not a number
+        if (typeof min !== 'number' || typeof max !== 'number') return;
+        // If the minimum number is bigger than the maximum number.
+        if (min > max) return output.innerText = 'The minimum number can not be larger than the maximum number.'
+
+        /* Output the number:
+         * Formula: (minimum) + Rounded(Random float between 0 & 1 * ((maximum number + 1) - minimum) */
+        output.innerText = min + Math.floor(Math.random() * ((max + 1) - min));
+      }
+    </script>
+</body>
+
+</html>
