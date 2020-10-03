@@ -1,9 +1,25 @@
-// program to convert decimal to binary
+<!DOCTYPE html>
+<html lang="en">
 
-// take input
-let number = parseInt(prompt('Enter a decimal number: '));
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary to Decimal</title>
+</head>
 
-// convert to binary
-let result = number.toString(2);
+<body style="font-family: monospace;font-size: xx-large;">
+    <script>
+        // program to convert decimal to binary
 
-console.log('Binary:' + ' ' + result);
+        // take input
+        let number = parseInt(prompt('Enter a decimal number: '));
+
+        // convert to binary
+        let result = number.toString(2);
+
+        document.write("The Binary form of "+ number + " is " + ' ' + result);
+
+    </script>
+</body>
+
+</html>
