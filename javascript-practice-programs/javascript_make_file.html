@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <textarea placeholder="Type something here" rows="5" cols="80" id="text"></textarea>
+    <br>
+    <a id="download"><button onclick="download()">Download</button></a>
+    <script>
+    function download() {
+      var text = document.getElementById('text').value;
+      var blob = new Blob([text], {type: "text/plain"});
+      var url = window.URL.createObjectURL(blob);
+      document.getElementById('download').setAttribute('href', url);
+      document.getElementById('download').setAttribute('download', 'output.txt')
+    }
+    </script>
+  </body>
+</html>
