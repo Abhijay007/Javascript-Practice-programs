@@ -96,7 +96,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         <a href="https://github.com/dhapin">
             <img src="https://avatars0.githubusercontent.com/u/67732961?v=4" width="100;" alt="dhapin"/>
             <br />
-            <sub><b>dhapin</b></sub>
+            <sub><b>Dhapin</b></sub>
         </a>
     </td>
     <td align="center">
@@ -157,4 +157,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 #### Created by [@Abhijay007](https://github.com/Abhijay007) Designed by [@Cheemashyper](https://github.com/Cheemashyper) - Feel Free to Contact us!
 
-### And forget to give this repository a 🌟
+### And forget to give this repository a p
