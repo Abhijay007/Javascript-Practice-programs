@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Validation</title>
+</head>
+<body style="background-color:powderblue">
+<form name="form" onsubmit="return number()" >  
+Enter the value: <input type="text" name="num" required="required"><br><br>  
+<input type="submit" value="submit">  
+</form>
+
+<script>  
+function number(){  
+var numb=document.form.num.value;  
+if (isNaN(numb)){  
+	alert("Numeric value only");
+  return false;  
+}else{
+	document.write("The Value is " + numb);
+	return true;  
+  }  
+}  
+</script>  
+</body>
+</html>

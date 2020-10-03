@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function myForm(){
+var uname = document.f1.name.value;
+var pass = document.f1.pswd.value;
+
+if(uname == "" || uname == null){
+	alert("Username can't be blank");
+	return false;
+	}
+else if(pass.length < 8){
+	alert("Password length must be 8 charachters long");
+	return false;
+	}
+else if(pass == "" || pass == null){
+	alert("Password can't be blank");
+}
+else{
+	alert("Sign Up successful");
+	return true;
+ 	}
+}
+</script>
+</head>
+<body style="background-color:silver">
+<center>
+<form name="f1" method="post" onsubmit="return myForm()" >
+<legend><b>Registeration</b></legend><br>
+Username: <input type="text" name="name"><br>
+Password: <input type="password" name="pswd"><br>
+<input type="submit" value="Sign Up">
+</form>
+</center>
+</body>
+</html>

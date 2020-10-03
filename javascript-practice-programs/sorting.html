@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+
+function sor(arr)
+{
+ let len = arr.length;
+    for (let i = 0; i < len; i++) {
+        for (let j = i+1; j < len; j++) {
+            if (arr[i] > arr[j]) {
+                let t = arr[i];
+                arr[i] = arr[j];
+                arr[j] = t;
+            }
+        }
+    }
+    return arr;
+}
+document.write(sor([10,9,8,7,6,5,4,3,2,1]));
+</script>
+</body>
+</html>
