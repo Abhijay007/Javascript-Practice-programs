@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Length Calcuator</title>
+</head>
+<body>
+    <h1>Type a word in the box</h1>
+    <input type="text" id="str">
+    <div id="output"></div>
+    <button id="btn"><h2>Click to calculate word length</h2></button>
+    <script>
+        let button = document.getElementById('btn');
+
+        button.addEventListener('click', function(){
+            let word = document.getElementById('str').value;
+            let count = word.length;
+            let outputDiv = document.getElementById('output');
+
+            outputDiv.innerHTML = `<h1>${count}</h1>`
+        });
+    </script>
+</body>
+</html>
