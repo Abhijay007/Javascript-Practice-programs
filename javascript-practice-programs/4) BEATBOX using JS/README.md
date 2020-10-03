@@ -1,5 +1,5 @@
 ## BEATBOX using JavaScript
-This is a BEATBOX made using HTML,CSS,JAVASCRIPT.
+This is a basic BEATBOX made using HTML,CSS,JAVASCRIPT.
 <br>
 You can play different beats with the help of keyboard keys or you can event use the buttons on the website.
 <br>
