@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var num1 = Math.floor((Math.random()*1000));
+        var matcher = 0;
+
+        alert("Welcome to the Number Game !!!!");
+        alert("Instructions -> \n 1. A random number has been choosed and range is from 0-1000. \n 2. Your goal is to guess the number and you are given 30 tries !!! \n 3. Enter the number you think is correct and the browser will tell you weather chosen number is larger or smaller then the number you entered.");
+
+        matcher = prompt("Enter the number ->" + num1);
+        for(var i=0;i<30;i++){
+            
+            if(matcher==num1){
+                alert("Congratulations You won the Game !!! \n You took " + (i+1) + " turns");
+                break;
+            }else if(matcher>num1){
+                matcher = prompt("Chosen number is SMALLER then entered number, Enter the number again -> ");  
+            }else if(matcher<num1){
+                matcher = prompt("Chosen number is GREATER then entered number, Enter the number again -> ");
+            }else{
+                matcher = prompt("Invalid Input !!!");
+            }
+
+        }
+
+    </script>
+</body>
+</html>
