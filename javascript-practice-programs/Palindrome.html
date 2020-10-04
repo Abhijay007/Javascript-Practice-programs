@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var number1 = prompt("Enter a number to check whether it's Palindrome or not -> ");
+        var reversedNumber=0,remender,number2;
+        number2 = number1;
+        while(number1 != 0){
+            remender = Math.floor(number1%10);
+            reversedNumber = reversedNumber*10 + remender;
+            number1 = Math.floor(number1 /= 10);
+        }
+
+        if(reversedNumber == number2){
+            alert("Number is Palindromic !!!");
+        }
+        else{
+            alert("Number is not Palindromic !!!");
+        }
+
+    </script>
+</body>
+</html>
