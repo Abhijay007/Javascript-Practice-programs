@@ -114,6 +114,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Avninder99">
+            <img src="https://avatars0.githubusercontent.com/u/53931646?v=4" width="100;" alt="Avninder99"/>
+            <br />
+            <sub><b>Avninder Preet Singh</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Cheemashyper">
             <img src="https://avatars2.githubusercontent.com/u/68045666?v=4" width="100;" alt="Cheemashyper"/>
             <br />
@@ -126,15 +133,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>Dimas Kurniawan</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Tejas1510">
             <img src="https://avatars3.githubusercontent.com/u/64543913?v=4" width="100;" alt="Tejas1510"/>
             <br />
             <sub><b>Tejas1510</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Vegeta360">
             <img src="https://avatars3.githubusercontent.com/u/72193687?v=4" width="100;" alt="Vegeta360"/>
