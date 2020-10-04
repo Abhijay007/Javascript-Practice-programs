@@ -93,6 +93,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/Priya19999">
+            <img src="https://avatars3.githubusercontent.com/u/46641222?v=4" width="100;" alt="Priya19999"/>
+            <br />
+            <sub><b>Priya19999</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/dhapin">
             <img src="https://avatars0.githubusercontent.com/u/67732961?v=4" width="100;" alt="dhapin"/>
             <br />
@@ -126,15 +133,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>Ck Cheema</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/kdimas12">
             <img src="https://avatars3.githubusercontent.com/u/19843984?v=4" width="100;" alt="kdimas12"/>
             <br />
             <sub><b>Dimas Kurniawan</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/pallavithakare28">
             <img src="https://avatars3.githubusercontent.com/u/62203552?v=4" width="100;" alt="pallavithakare28"/>
@@ -169,7 +176,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>Kratika Singhal</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/monil28">
             <img src="https://avatars1.githubusercontent.com/u/53273152?v=4" width="100;" alt="monil28"/>
