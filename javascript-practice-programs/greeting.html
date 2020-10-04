@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+
+        <title>Simple Greeting</title>
+    </head>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+        .container {
+            max-width: 480;
+        }
+
+        body {
+            font-family: "Nanum Pen Script", cursive;
+        }
+    </style>
+    <body onload="startTime()">
+        <!-- A root element for TypeIt to target. -->
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-sm-12 my-auto">
+                    <p id="waktu" class="font-weight-bold lead"></p>
+                    <h1 id="myElement"></h1>
+                    <p id="jawaban"></p>
+                    <footer>
+                        <p>
+                            created by
+                            <a href="https://www.instagram.com/kdimas29"
+                                ><b>@kdimas29</b></a
+                            >
+                            made with ❤️
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <!-- The script itself, loaded AFTER your root element. -->
+        <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+        <script>
+            // Waktu
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = ("0" + today.getMinutes()).slice(-2);
+                var s = ("0" + today.getSeconds()).slice(-2);
+                document.getElementById("waktu").innerHTML =
+                    h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+
+            var today = new Date();
+            var h = today.getHours();
+            var jawaban = "";
+            if (h < 12) {
+                jawaban = "<b>Morning</b>";
+            } else if (h >= 12 && h <= 17) {
+                jawaban = "<b>Afternoon</b>";
+            } else if (h >= 17 && h <= 24) {
+                jawaban = "<b>Evening</b>";
+            }
+
+            // Typeit
+            new TypeIt("#myElement", {
+                startDelay: 2000,
+                loop: true,
+            })
+
+                .type("Good " + jawaban, { delay: 2000 })
+                .delete(null, { delay: 1000 })
+                .type("lopyu ❤️", { delay: 2000 })
+                .go();
+        </script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
