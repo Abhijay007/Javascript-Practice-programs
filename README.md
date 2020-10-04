@@ -178,4 +178,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 #### Created by [@Abhijay007](https://github.com/Abhijay007) Designed by [@Cheemashyper](https://github.com/Cheemashyper) - Feel Free to Contact us!
 
-### And forget to give this repository a p star
+### And forget to give this repository a star
