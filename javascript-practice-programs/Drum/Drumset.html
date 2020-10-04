@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Set</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: 1366px;
+    }
+    
+    div.keys {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("m.jpg");
+        background-size: cover;
+        flex-wrap: wrap;
+        font-family: sans-serif;
+    }
+    
+    div.key {
+        color: #fff;
+        width: 100px;
+        height: 100px;
+        border: 3px solid rgb(255, 136, 0);
+        border-radius: 5px;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem .5rem;
+        margin: 9px;
+        background: rgba(0, 0, 0, 0.4);
+        transition: all .07s;
+    }
+    
+    .onplay {
+        transform: scale(1.1);
+        border: 3px solid rgb(255, 136, 0);
+        box-shadow: 0 0 10px rgb(255, 136, 0);
+    }
+    
+    kbd {
+        display: block;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    span {
+        color: rgb(0, 174, 255);
+        font-weight: bold;
+    }
+    
+    @media (min-width: 780px) and (max-width:1000px) {
+        div.keys {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("m.jpg");
+            background-size: cover;
+            flex-wrap: wrap;
+            font-family: sans-serif;
+        }
+        div.key {
+            color: #fff;
+            width: 350px;
+            height: 350px;
+            border: 3px solid rgb(255, 136, 0);
+            border-radius: 5px;
+            font-size: 3rem;
+            text-align: center;
+            padding: 1rem .5rem;
+            margin-top: 2rem;
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+            background: rgba(0, 0, 0, 0.4);
+            transition: all .07s;
+        }
+        kbd {
+            display: block;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    @media (min-width: 380px) and (max-width:750px) {
+        div.keys {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("m.jpg");
+            background-size: cover;
+            flex-wrap: wrap;
+            font-family: sans-serif;
+        }
+        div.key {
+            color: #fff;
+            width: 300px;
+            height: 300px;
+            border: 3px solid rgb(255, 136, 0);
+            border-radius: 5px;
+            font-size: 3rem;
+            text-align: center;
+            padding: 1rem .5rem;
+            margin-top: 2rem;
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+            background: rgba(0, 0, 0, 0.4);
+            transition: all .07s;
+        }
+        kbd {
+            display: block;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+</style>
+
+<body>
+    <div class="keys">
+        <div data-key="49" class="key">
+            <kbd>1</kbd>
+            <span class="sound">Hi-Hat</span>
+        </div>
+
+        <div data-key="50" class="key">
+            <kbd>2</kbd>
+            <span class="sound">Tom</span>
+        </div>
+
+        <div data-key="51" class="key">
+            <kbd>3</kbd>
+            <span class="sound">Crash</span>
+        </div>
+
+        <div data-key="52" class="key">
+            <kbd>4</kbd>
+            <span class="sound">Cymbal</span>
+        </div>
+
+        <div data-key="53" class="key">
+            <kbd>5</kbd>
+            <span class="sound">Kick</span>
+        </div>
+
+        <div data-key="54" class="key">
+            <kbd>6</kbd>
+            <span class="sound">Acoust</span>
+        </div>
+
+        <div data-key="55" class="key">
+            <kbd>7</kbd>
+            <span class="sound">umble</span>
+        </div>
+
+        <div data-key="56" class="key">
+            <kbd>8</kbd>
+            <span class="sound">Lofi</span>
+        </div>
+
+        <div data-key="57" class="key">
+            <kbd>9</kbd>
+            <span class="sound">Shaky</span>
+        </div>
+    </div>
+    <audio data-key="49" src="Hi-Hat.mp3"></audio>
+    <audio data-key="50" src="Tom.mp3"></audio>
+    <audio data-key="51" src="Crash.mp3"></audio>
+    <audio data-key="52" src="Cymbal.mp3"></audio>
+    <audio data-key="53" src="Snare.mp3"></audio>
+    <audio data-key="54" src="acoust.wav"></audio>
+    <audio data-key="55" src="umbrella.wav"></audio>
+    <audio data-key="56" src="lofi.wav"></audio>
+    <audio data-key="57" src="shaky-tingle.wav"></audio>
+
+    <script>
+        function playSound(a) {
+            const audio = document.querySelector(`audio[data-key="${a.keyCode}"]`);
+            const key = document.querySelector(`.key[data-key="${a.keyCode}"]`);
+
+            //console.log(audio);
+            if (!audio) return;
+            audio.currentTime = 0;
+            audio.play();
+            key.classList.add('onplay');
+            //console.log(key);
+        }
+
+        function removeTransition(a) {
+            if (a.propertyName !== 'transform') return;
+            this.classList.remove('onplay');
+            //console.log(a.propertyName);
+        }
+
+
+        const keys = document.querySelectorAll('.key');
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+        window.addEventListener('keydown', playSound);
+    </script>
+</body>
+
+
+</html>
