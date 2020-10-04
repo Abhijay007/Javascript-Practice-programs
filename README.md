@@ -136,6 +136,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/pallavithakare28">
+            <img src="https://avatars3.githubusercontent.com/u/62203552?v=4" width="100;" alt="pallavithakare28"/>
+            <br />
+            <sub><b>Pallavi Thakare</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Tejas1510">
             <img src="https://avatars3.githubusercontent.com/u/64543913?v=4" width="100;" alt="Tejas1510"/>
             <br />
