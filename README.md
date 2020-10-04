@@ -143,6 +143,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Dilshan97">
+            <img src="https://avatars2.githubusercontent.com/u/27553144?v=4" width="100;" alt="Dilshan97"/>
+            <br />
+            <sub><b>Dilshan Ramesh</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/monil28">
             <img src="https://avatars1.githubusercontent.com/u/53273152?v=4" width="100;" alt="monil28"/>
             <br />
@@ -157,4 +164,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 #### Created by [@Abhijay007](https://github.com/Abhijay007) Designed by [@Cheemashyper](https://github.com/Cheemashyper) - Feel Free to Contact us!
 
-### And forget to give this repository a 🌟 star
+### And forget to give this repository a p star
