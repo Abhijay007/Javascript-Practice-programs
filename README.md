@@ -184,6 +184,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>MoNiL</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/tc80">
+            <img src="https://avatars0.githubusercontent.com/u/34184511?v=4" width="100;" alt="tc80"/>
+            <br />
+            <sub><b>Tyler Caslin</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: contributors -end -->
