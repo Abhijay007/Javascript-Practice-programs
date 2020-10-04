@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin change Program US denominations</title>
+</head>
+
+<body style="font-family: monospace;font-size: xx-large;">
+    <script>
+        // print change for US denominations
+        function print_change(cents) {
+            let original_cents = cents;
+
+            if (cents < 0) {
+                console.log("Cannot have negative cents!")
+                return
+            }
+
+            let dollars = Math.floor(cents / 100);
+            cents %= 100;
+
+            let quarters = Math.floor(cents / 25);
+            cents %= 25;
+
+            let dimes = Math.floor(cents / 10);
+            cents %= 10;
+
+            let nickels = Math.floor(cents / 5);
+            cents %= 5;
+
+            let pennies = cents;
+
+            document.write(
+                original_cents + " cents is equal to " +
+                dollars + " dollars, " +
+                quarters + " quarters, " +
+                dimes + " dimes, " +
+                nickels + " nickels, and " +
+                pennies + " pennies."
+            )
+        }
+
+        print_change(284); 
+    </script>
+</body>
+
+</html>
