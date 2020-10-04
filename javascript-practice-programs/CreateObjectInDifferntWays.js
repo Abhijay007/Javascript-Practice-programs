@@ -1,4 +1,4 @@
-// program to create JavaScript object using object literal
+// # 1 program to create JavaScript object using object literal
 let person = { 
     name: 'John',
     age: 20,
@@ -22,12 +22,7 @@ console.log(person.score.maths);
 
 
 
-
-
-
-
-
-// program to create JavaScript object using instance of an object
+// #2 program to create JavaScript object using instance of an object
 let person = new Object ( { 
     name: 'John',
     age: 20,
@@ -52,9 +47,7 @@ console.log(person.score.maths);
 
 
 
-
-
-// program to create JavaScript object using constructor function
+// #3 program to create JavaScript object using constructor function
 
 function Person() {
     this.name = 'John',
