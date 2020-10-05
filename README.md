@@ -217,7 +217,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         <a href="https://github.com/prasanna1432">
             <img src="https://avatars2.githubusercontent.com/u/71954483?v=4" width="100;" alt="prasanna1432"/>
             <br />
-            <sub><b>prasanna1432</b></sub>
+            <sub><b>Prasanna1432</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/reverk">
+            <img src="https://avatars1.githubusercontent.com/u/50874863?v=4" width="100;" alt="reverk"/>
+            <br />
+            <sub><b>Victor</b></sub>
         </a>
     </td></tr>
 </table>
