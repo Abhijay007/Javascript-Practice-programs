@@ -196,7 +196,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         <a href="https://github.com/geekyboy14">
             <img src="https://avatars1.githubusercontent.com/u/72297215?v=4" width="100;" alt="geekyboy14"/>
             <br />
-            <sub><b>geekyboy14</b></sub>
+            <sub><b>Geekyboy14</b></sub>
         </a>
     </td>
     <td align="center">
@@ -211,6 +211,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <img src="https://avatars1.githubusercontent.com/u/53273152?v=4" width="100;" alt="monil28"/>
             <br />
             <sub><b>MoNiL</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/prasanna1432">
+            <img src="https://avatars2.githubusercontent.com/u/71954483?v=4" width="100;" alt="prasanna1432"/>
+            <br />
+            <sub><b>prasanna1432</b></sub>
         </a>
     </td></tr>
 </table>
