@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0 ">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-decoration: underline;
+        }
+        
+        #dtime {
+            color: rgb(0, 163, 250);
+            display: flex;
+            justify-content: center;
+            font-size: 900%;
+            margin-top: 100px;
+            background-color: whitesmoke;
+            flex-shrink: 1;
+            justify-content: center;
+            font-family: serif;
+        }
+    </style>
+    </body>
+    <h1>Digital Clock</h1>
+    <div id="dtime"></div>
+    <!--this store the main numerical digit or display time of the digitalclock-->
+    <!-- the div should be empty because it already contains the time to display-->
+    <script>
+        //opens of script tag
+        //show the how time is diplay and work
+
+        setInterval(digitalclock, 1000); //this means the time interval or gap between each count of the digital clock
+
+        function digitalclock() {
+            var time = new Date(); //this fetch or get the date from your device in a variable TIME format
+            var hrs = time.getHours(); //this get or fetch the hours from your device in a variable HRS
+            var min = time.getMinutes(); //this get or fetch the minutes from your device in a variable MIN
+            var sec = time.getSeconds(); //this get or fetch the seconds from your device in a variable SEC
+            var dn = 'AM'; //this is shown according to our time format and it is store in variable dn 
+
+            if (hrs > 12) { //Third condotion is applied for showing am and pm of time and if it is not pm then it
+                dn = 'PM'; //show in am in the morning
+            }
+            if (hrs > 12) { //this is to knnow if the time is above 12 or not if it is 
+                hrs = hrs - 12; //then it will subtract hour from 12 and display time (for eg:i.e 13-12= 1 am)
+            }
+
+            /* This condition applied when time is more than 12, in this condition when time exceed 
+                                           from 12 then it subtract that value with 12 and return another value (i.e 13 - 12 = 1)*/
+
+
+            if (hrs == 0) { //this means when the hour is zero then it means that is 12 
+                hrs = 12; //when 12-12 =0, then in this case 0 i suppose or declared to be 12.00.00
+            }
+
+            if (hrs < 10) { //if the hour is less than 10 then it add 0 before the  single digit (i.e 09)
+                hrs = '0' + hrs; //it only work on single digit//0 dissapear after the two digit
+            }
+
+            if (min < 10) { //if the min is less than 10 then it  add 0 before the  single digit (i.e 09)
+                min = '0' + min; //it only work on single digit//0 dissapear after the two digit
+            }
+
+            if (sec < 10) { //if the sec is less than 10 then it add 0 before the  single digit (i.e 09)
+                sec = '0' + sec; //it only work on single digit//0 dissapear after the two digit
+            }
+            //this help to get id of a div and its innerhtml//
+            document.getElementById('dtime').innerHTML = hrs + ':' + min + ':' + sec + ' ' + dn;
+
+            //in the above code,we show the inner html of div and set its inner text in time format
+            //while writing this code you should be careful
+            //your id should be same and it is case sentative also so that
+            //while writing id , be careful otherwise it can give errors
+            //id should have as same as above and do not forget to write any of the aboce code
+
+        }
+
+        //close of the script tag
+    </script>
+
+</html>
