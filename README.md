@@ -114,12 +114,27 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/tc80">
+            <img src="https://avatars0.githubusercontent.com/u/34184511?v=4" width="100;" alt="tc80"/>
+            <br />
+            <sub><b>Tyler Caslin</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/AN-2000">
             <img src="https://avatars3.githubusercontent.com/u/51452682?v=4" width="100;" alt="AN-2000"/>
             <br />
             <sub><b>AN-2000</b></sub>
         </a>
     </td>
+    <td align="center">
+        <a href="https://github.com/AbhishekLwagun">
+            <img src="https://avatars0.githubusercontent.com/u/69157459?v=4" width="100;" alt="AbhishekLwagun"/>
+            <br />
+            <sub><b>AbhishekLwagun</b></sub>
+        </a>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/AnamarijaJ">
             <img src="https://avatars2.githubusercontent.com/u/60478438?v=4" width="100;" alt="AnamarijaJ"/>
@@ -133,8 +148,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>Ck Cheema</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/kdimas12">
             <img src="https://avatars3.githubusercontent.com/u/19843984?v=4" width="100;" alt="kdimas12"/>
@@ -150,12 +164,20 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/RiyaMadaan">
+            <img src="https://avatars1.githubusercontent.com/u/57029469?v=4" width="100;" alt="RiyaMadaan"/>
+            <br />
+            <sub><b>Riya Madaan</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Tejas1510">
             <img src="https://avatars3.githubusercontent.com/u/64543913?v=4" width="100;" alt="Tejas1510"/>
             <br />
             <sub><b>Tejas1510</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Vegeta360">
             <img src="https://avatars3.githubusercontent.com/u/72193687?v=4" width="100;" alt="Vegeta360"/>
@@ -171,25 +193,24 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/geekyboy14">
+            <img src="https://avatars1.githubusercontent.com/u/72297215?v=4" width="100;" alt="geekyboy14"/>
+            <br />
+            <sub><b>geekyboy14</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/kratikasinghal">
             <img src="https://avatars2.githubusercontent.com/u/72219837?v=4" width="100;" alt="kratikasinghal"/>
             <br />
             <sub><b>Kratika Singhal</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/monil28">
             <img src="https://avatars1.githubusercontent.com/u/53273152?v=4" width="100;" alt="monil28"/>
             <br />
             <sub><b>MoNiL</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/tc80">
-            <img src="https://avatars0.githubusercontent.com/u/34184511?v=4" width="100;" alt="tc80"/>
-            <br />
-            <sub><b>Tyler Caslin</b></sub>
         </a>
     </td></tr>
 </table>
