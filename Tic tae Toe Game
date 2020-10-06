@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+      #sgn{
+  border:5px black solid ;
+  font-size:100px;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  text-decoration-color: blue;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1><strong>Welcome to Tic Tac Toe!</strong></h1>
+        <p><button id="bn" type="button" class="btn btn-primary btn-lg" name="button" >Restart!</button></p>
+      </div>
+    </div>
+    <table align="center">
+      <thead>
+        <th></th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tr>
+        <td id="sgn"></td>
+        <td id="sgn"></td>
+        <td id="sgn"></td>
+      </tr>
+      <tr>
+        <td id="sgn"></td>
+        <td id="sgn"></td>
+        <td id="sgn"></td>
+      </tr>
+      <tr>
+        <td id="sgn"></td>
+        <td id="sgn"></td>
+        <td id="sgn"></td>
+      </tr>
+
+
+    </table>
+      <script>
+        var bt=document.querySelector("#bn");
+var tab=document.querySelectorAll("#sgn");//array of table data
+function restart(){
+  for(var i=0;i<tab.length;i++)
+  {
+    tab[i].textContent='';
+  }
+}
+bt.addEventListener('click',restart);
+function signchange(){
+    if(this.textContent===''){
+      this.textContent='X';}
+    else if(this.textContent==='X')
+      {this.textContent='O';}
+    else{
+      this.textContent='';}
+}
+for(var j=0;j<tab.length;j++)
+{
+  tab[j].addEventListener('click',signchange);
+}
+
+      </script>
+  </body>
+</html>
