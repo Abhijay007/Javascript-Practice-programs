@@ -28,7 +28,8 @@ This Repository will help you to Practice your JavaScript Skills with the help o
 |Reverse a Number|
 |Multiplication of Table|
 |Sum of Natural Numbers|
-|Create Object in Different Ways|     
+|Create Object in Different Ways|
+|Rock, Paper, Scissors Game|
      
  
 ## Installation
@@ -226,6 +227,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <img src="https://avatars1.githubusercontent.com/u/50874863?v=4" width="100;" alt="reverk"/>
             <br />
             <sub><b>Victor</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/GriffinMLN">
+            <img src="https://avatars1.githubusercontent.com/u/65615065?v=4" width="100;" alt="reverk"/>
+            <br />
+            <sub><b>GriffinMLN</b></sub>
         </a>
     </td></tr>
 </table>
