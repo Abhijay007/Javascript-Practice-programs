@@ -114,6 +114,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Dilshan97">
+            <img src="https://avatars2.githubusercontent.com/u/27553144?v=4" width="100;" alt="Dilshan97"/>
+            <br />
+            <sub><b>Dilshan Ramesh</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/tc80">
             <img src="https://avatars0.githubusercontent.com/u/34184511?v=4" width="100;" alt="tc80"/>
             <br />
@@ -126,15 +133,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>AN-2000</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/AbhishekLwagun">
             <img src="https://avatars0.githubusercontent.com/u/69157459?v=4" width="100;" alt="AbhishekLwagun"/>
             <br />
             <sub><b>AbhishekLwagun</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/AnamarijaJ">
             <img src="https://avatars2.githubusercontent.com/u/60478438?v=4" width="100;" alt="AnamarijaJ"/>
@@ -169,15 +176,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>Pallavi Thakare</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/ParthSaini-2006">
             <img src="https://avatars0.githubusercontent.com/u/54998045?v=4" width="100;" alt="ParthSaini-2006"/>
             <br />
             <sub><b>ParthSaini-2006</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/RiyaMadaan">
             <img src="https://avatars1.githubusercontent.com/u/57029469?v=4" width="100;" alt="RiyaMadaan"/>
@@ -197,13 +204,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <img src="https://avatars3.githubusercontent.com/u/72193687?v=4" width="100;" alt="Vegeta360"/>
             <br />
             <sub><b>Vegeta360</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Dilshan97">
-            <img src="https://avatars2.githubusercontent.com/u/27553144?v=4" width="100;" alt="Dilshan97"/>
-            <br />
-            <sub><b>Dilshan Ramesh</b></sub>
         </a>
     </td>
     <td align="center">
