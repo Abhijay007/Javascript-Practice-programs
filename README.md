@@ -171,13 +171,20 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/GriffinMLN">
+            <img src="https://avatars3.githubusercontent.com/u/65615065?v=4" width="100;" alt="GriffinMLN"/>
+            <br />
+            <sub><b>GriffinMLN</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/pallavithakare28">
             <img src="https://avatars3.githubusercontent.com/u/62203552?v=4" width="100;" alt="pallavithakare28"/>
             <br />
             <sub><b>Pallavi Thakare</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/ParthSaini-2006">
             <img src="https://avatars0.githubusercontent.com/u/54998045?v=4" width="100;" alt="ParthSaini-2006"/>
@@ -212,15 +219,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>Geekyboy14</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/kratikasinghal">
             <img src="https://avatars2.githubusercontent.com/u/72219837?v=4" width="100;" alt="kratikasinghal"/>
             <br />
             <sub><b>Kratika Singhal</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/monil28">
             <img src="https://avatars1.githubusercontent.com/u/53273152?v=4" width="100;" alt="monil28"/>
