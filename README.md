@@ -64,6 +64,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Dilshan97">
+            <img src="https://avatars2.githubusercontent.com/u/27553144?v=4" width="100;" alt="Dilshan97"/>
+            <br />
+            <sub><b>Dilshan Ramesh</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Aayush-hub">
             <img src="https://avatars1.githubusercontent.com/u/65889104?v=4" width="100;" alt="Aayush-hub"/>
             <br />
@@ -83,15 +90,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>Avninder Preet Singh</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Geekz45679">
             <img src="https://avatars3.githubusercontent.com/u/22227801?v=4" width="100;" alt="Geekz45679"/>
             <br />
             <sub><b>Brad</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/muchirijane">
             <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
@@ -111,13 +118,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <img src="https://avatars0.githubusercontent.com/u/67732961?v=4" width="100;" alt="dhapin"/>
             <br />
             <sub><b>Dhapin</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Dilshan97">
-            <img src="https://avatars2.githubusercontent.com/u/27553144?v=4" width="100;" alt="Dilshan97"/>
-            <br />
-            <sub><b>Dilshan Ramesh</b></sub>
         </a>
     </td>
     <td align="center">
