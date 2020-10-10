@@ -4,27 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star pattern 2</title>
+    <title>Length converter</title>
+    <style>
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        input {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 
 <body style="font-family: monospace;font-size: xx-large;">
+    <div class="row"><label class="text">METER : </label><input type="number" value="0" id="meter"
+            onchange="mToCm(this.value)"></div>
+    <div class="row"><label class="text">CENTIMETER : </label><input type="number" value="0" id="cm"
+            onchange="cmToM(this.value)"></div>
     <script>
-
-        function cm_to_m(value) {
-            let convert = 100
-            return value / convert
+        function cmToM(cm) {
+            document.getElementById("meter").value = cm / 100;
         }
 
-        // Inverse
-        function m_to_cm(value) {
-            let convert = 100
-            return value * convert
+        function mToCm(m) {
+            document.getElementById("cm").value = m * 100;
         }
-
-        document.write("M to CM : " + m_to_cm(1)+ "<br/>")
-    
-        document.write("CM to M : " + cm_to_m(100))
-
     </script>
 </body>
 
