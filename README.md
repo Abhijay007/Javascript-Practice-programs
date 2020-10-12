@@ -214,13 +214,20 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Vipul1142">
+            <img src="https://avatars0.githubusercontent.com/u/26426991?v=4" width="100;" alt="Vipul1142"/>
+            <br />
+            <sub><b>Vipul Jha</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/geekyboy14">
             <img src="https://avatars1.githubusercontent.com/u/72297215?v=4" width="100;" alt="geekyboy14"/>
             <br />
             <sub><b>Geekyboy14</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/kratikasinghal">
             <img src="https://avatars2.githubusercontent.com/u/72219837?v=4" width="100;" alt="kratikasinghal"/>
