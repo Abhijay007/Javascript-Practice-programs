@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Rock, Paper, Scissors</title>
+  <style>
+    .row {
+      margin-top: 35vh;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    button {
+      background-color: dodgerblue;
+      color: white;
+      height: 50px;
+      width: 150px;
+      border: none;
+      font-weight: bold;
+    }
+
+    label {
+      text-align: center;
+    }
+  </style>
   <script src="rock-paper-scissors-game.js" defer></script>
 </head>
-<body>
-  <button id="start-game-btn">Start Game!</button>
+
+<body style="font-family: monospace;font-size: xx-large;">
+  <div class="row">
+    <button onclick="startGame('ROCK')" id="rock">ROCK</button>
+    <button onclick="startGame('PAPER')" id="paper">PAPER</button>
+    <button onclick="startGame('SCISSOR')" id="scissor">SCISSOR</button>
+  </div>
+  <div class="row"><label id="result"></label></div>
 </body>
+
 </html>
