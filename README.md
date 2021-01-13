@@ -57,6 +57,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Dilshan97">
+            <img src="https://avatars2.githubusercontent.com/u/27553144?v=4" width="100;" alt="Dilshan97"/>
+            <br />
+            <sub><b>Dilshan Ramesh</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/bratinkundu">
             <img src="https://avatars3.githubusercontent.com/u/36078208?v=4" width="100;" alt="bratinkundu"/>
             <br />
@@ -68,13 +75,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <img src="https://avatars0.githubusercontent.com/u/26426991?v=4" width="100;" alt="Vipul1142"/>
             <br />
             <sub><b>Vipul Jha</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Dilshan97">
-            <img src="https://avatars2.githubusercontent.com/u/27553144?v=4" width="100;" alt="Dilshan97"/>
-            <br />
-            <sub><b>Dilshan Ramesh</b></sub>
         </a>
     </td>
     <td align="center">
