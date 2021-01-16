@@ -179,6 +179,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/Brillianttyagi">
+            <img src="https://avatars3.githubusercontent.com/u/48671623?v=4" width="100;" alt="Brillianttyagi"/>
+            <br />
+            <sub><b>Deepanshu Tyagi</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/kdimas12">
             <img src="https://avatars3.githubusercontent.com/u/19843984?v=4" width="100;" alt="kdimas12"/>
             <br />
@@ -212,15 +219,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <br />
             <sub><b>Riya Madaan</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Tejas1510">
             <img src="https://avatars3.githubusercontent.com/u/64543913?v=4" width="100;" alt="Tejas1510"/>
             <br />
             <sub><b>Tejas1510</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Vegeta360">
             <img src="https://avatars3.githubusercontent.com/u/72193687?v=4" width="100;" alt="Vegeta360"/>
@@ -254,13 +261,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
             <img src="https://avatars2.githubusercontent.com/u/71954483?v=4" width="100;" alt="prasanna1432"/>
             <br />
             <sub><b>Prasanna1432</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/reverk">
-            <img src="https://avatars1.githubusercontent.com/u/50874863?v=4" width="100;" alt="reverk"/>
-            <br />
-            <sub><b>Victor</b></sub>
         </a>
     </td></tr>
 </table>
