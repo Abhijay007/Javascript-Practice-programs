@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    width: 80vw;
+    margin: 2rem auto;
+    background-color: rgb(34, 34, 34);
+  }
+  
+  .nav,
+  .main {
+    text-align: center;
+  
+    margin-bottom: 2rem;
+  }
+  
+  .get-quote,
+  .more-quote {
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 24px;
+    background-color: rgb(180, 146, 101);
+    font-weight: 600;
+    font-size: 18px;
+    color: aliceblue;
+  }
+  
+  .get-quote:hover,
+  .more-quote:hover {
+    background-color: rgba(182, 133, 69, 0.6);
+  }
+  
+  .quote,
+  .sub-quotes,
+  .statusMsg {
+    height: 40vh;
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    border-left: 0.8rem solid rgb(182, 133, 69);
+    border-right: 0.8rem solid rgb(182, 133, 69);
+    background-color: antiquewhite;
+  }
+  
+  .main-quote {
+    line-height: 2.5;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .author {
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+  
+  .more-quote {
+    margin: 1rem;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+  }
+  
+  .more-quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .sub-quotes {
+    height: 25vw;
+    width: 25vw;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+  .statusMsg {
+    height: max-content;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .quote,
+    .sub-quotes,
+    .statusMsg {
+      height: 40vh;
+      width: 80vw;
+    }
+  
+    .more-quotes {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .sub-quotes {
+      height: max-content;
+      width: 55vw;
+      text-align: left;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 360px) {
+    .more-quotes {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+  
