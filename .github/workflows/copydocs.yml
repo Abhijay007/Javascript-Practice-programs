@@ -2,7 +2,7 @@ name : Copy Docs
 on: 
   push:
     branches:
-      - master
+      - main
     paths:
       - 'partial/**'
 
