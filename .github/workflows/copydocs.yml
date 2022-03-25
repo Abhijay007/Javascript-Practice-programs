@@ -1,0 +1,27 @@
+name : Copy Docs
+on: 
+  push:
+    branches:
+      - master
+    paths:
+      - 'partial/**'
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Copycat
+      uses: andstor/copycat-action@v3
+      with:
+        commit_message: "Syncing from anax"
+        clean: false
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: partial
+        dst_path: /partial
+        dst_owner: Abhijay007
+        dst_repo_name: CPP-Ques
+        dst_branch: main
+        src_branch: main    
+        username: Abhijay007
+        email: Abhijay007j@gmail.com     
