@@ -16,7 +16,7 @@ function factorial_recursive(n) {
 }
 
 // calculate factorial by storing previous results (memoization)
-var memo = [];
+var memo = [];  //array
 
 function factorial_memoization(n) {
     if (n == 0 || n == 1) {
