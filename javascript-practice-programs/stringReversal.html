@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Reversal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .input-group {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            resize: vertical;
+            min-height: 100px;
+            font-family: inherit;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        button {
+            flex: 1;
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            min-width: 120px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .clear-btn {
+            background-color: #e74c3c;
+        }
+        .clear-btn:hover {
+            background-color: #c0392b;
+        }
+        .result {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        .result h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .result-text {
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+            word-break: break-all;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #bdc3c7;
+            margin-top: 10px;
+        }
+        .methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .method-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .method-card h4 {
+            margin-top: 0;
+            color: #495057;
+            font-size: 14px;
+        }
+        .method-card p {
+            margin: 5px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #6c757d;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #6c757d;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 String Reversal</h1>
+        
+        <div class="input-group">
+            <label for="inputText">Enter text to reverse:</label>
+            <textarea id="inputText" placeholder="Type or paste your text here..."></textarea>
+        </div>
+        
+        <div class="button-group">
+            <button onclick="reverseString()">Reverse String</button>
+            <button onclick="reverseWords()">Reverse Words</button>
+            <button onclick="reverseEachWord()">Reverse Each Word</button>
+            <button class="clear-btn" onclick="clearAll()">Clear</button>
+        </div>
+        
+        <div id="result" class="result" style="display: none;">
+            <h3 id="resultTitle">Result:</h3>
+            <div id="resultText" class="result-text"></div>
+        </div>
+        
+        <div class="stats" id="stats" style="display: none;">
+            <div class="stat-item">
+                <div class="stat-value" id="charCount">0</div>
+                <div class="stat-label">Characters</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="wordCount">0</div>
+                <div class="stat-label">Words</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="spaceCount">0</div>
+                <div class="stat-label">Spaces</div>
+            </div>
+        </div>
+        
+        <div class="methods">
+            <div class="method-card">
+                <h4>Method 1: split/reverse/join</h4>
+                <p>str.split('').reverse().join('')</p>
+            </div>
+            <div class="method-card">
+                <h4>Method 2: for loop</h4>
+                <p>Build string backwards</p>
+            </div>
+            <div class="method-card">
+                <h4>Method 3: recursion</h4>
+                <p>Recursive function call</p>
+            </div>
+            <div class="method-card">
+                <h4>Method 4: array methods</h4>
+                <p>Using reduce or map</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function reverseString() {
+            const inputText = document.getElementById('inputText').value;
+            if (!inputText.trim()) {
+                showResult('Please enter some text to reverse.', 'Error:');
+                return;
+            }
+            
+            // Method 1: Using split, reverse, join
+            const reversed1 = inputText.split('').reverse().join('');
+            
+            // Method 2: Using for loop
+            let reversed2 = '';
+            for (let i = inputText.length - 1; i >= 0; i--) {
+                reversed2 += inputText[i];
+            }
+            
+            // Method 3: Using recursion
+            function reverseRecursive(str) {
+                if (str === '') return '';
+                return reverseRecursive(str.substr(1)) + str.charAt(0);
+            }
+            const reversed3 = reverseRecursive(inputText);
+            
+            // Method 4: Using reduce
+            const reversed4 = inputText.split('').reduce((acc, char) => char + acc, '');
+            
+            showResult(`
+                <strong>Method 1 (split/reverse/join):</strong><br>${reversed1}<br><br>
+                <strong>Method 2 (for loop):</strong><br>${reversed2}<br><br>
+                <strong>Method 3 (recursion):</strong><br>${reversed3}<br><br>
+                <strong>Method 4 (reduce):</strong><br>${reversed4}
+            `, 'String Reversed:');
+            
+            updateStats(inputText);
+        }
+        
+        function reverseWords() {
+            const inputText = document.getElementById('inputText').value;
+            if (!inputText.trim()) {
+                showResult('Please enter some text to reverse.', 'Error:');
+                return;
+            }
+            
+            const words = inputText.split(' ');
+            const reversedWords = words.reverse().join(' ');
+            
+            showResult(reversedWords, 'Words Reversed:');
+            updateStats(inputText);
+        }
+        
+        function reverseEachWord() {
+            const inputText = document.getElementById('inputText').value;
+            if (!inputText.trim()) {
+                showResult('Please enter some text to reverse.', 'Error:');
+                return;
+            }
+            
+            const words = inputText.split(' ');
+            const reversedEachWord = words.map(word => word.split('').reverse().join('')).join(' ');
+            
+            showResult(reversedEachWord, 'Each Word Reversed:');
+            updateStats(inputText);
+        }
+        
+        function showResult(text, title) {
+            const resultDiv = document.getElementById('result');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultText = document.getElementById('resultText');
+            
+            resultTitle.textContent = title;
+            resultText.innerHTML = text;
+            resultDiv.style.display = 'block';
+        }
+        
+        function updateStats(text) {
+            const charCount = text.length;
+            const wordCount = text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
+            const spaceCount = (text.match(/\s/g) || []).length;
+            
+            document.getElementById('charCount').textContent = charCount;
+            document.getElementById('wordCount').textContent = wordCount;
+            document.getElementById('spaceCount').textContent = spaceCount;
+            document.getElementById('stats').style.display = 'flex';
+        }
+        
+        function clearAll() {
+            document.getElementById('inputText').value = '';
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('stats').style.display = 'none';
+        }
+        
+        // Real-time character count
+        document.getElementById('inputText').addEventListener('input', function() {
+            const text = this.value;
+            if (text.trim() !== '') {
+                updateStats(text);
+            } else {
+                document.getElementById('stats').style.display = 'none';
+            }
+        });
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'Enter') {
+                reverseString();
+            } else if (e.ctrlKey && e.key === 'r') {
+                e.preventDefault();
+                reverseString();
+            } else if (e.ctrlKey && e.key === 'w') {
+                e.preventDefault();
+                reverseWords();
+            } else if (e.ctrlKey && e.key === 'e') {
+                e.preventDefault();
+                reverseEachWord();
+            } else if (e.ctrlKey && e.key === 'l') {
+                e.preventDefault();
+                clearAll();
+            }
+        });
+    </script>
+</body>
+</html>
